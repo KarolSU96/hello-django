@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'django-todo-1010-dea745ef3881.herokuapp.com']
+    os.environ.get('HEROKU_HOSTNAME')]
 
 
 # Application definition
